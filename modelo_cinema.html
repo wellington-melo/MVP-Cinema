@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Filmes CINECEC</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='estilo_cinema.css'>
+    </head>
+
+    <body>
+    
+        <header>
+            <h1 style = "text-align: center">SEJA BEM - VINDOS AO CINECEC</h1>
+        </header>
+
+        <p style = "text-align: center;color: white;">Que sua imaginação se encontre no melhor de nossos filmes.</h4>
+        <br><br>
+        
+        
+        <section class="corpo">
+            <div id = "div_input">
+                
+                <h4 style="text-align: center; color: darkblue">   VEJA OS FILMES EM CARTAZ PARA ESSA SEMANA:</h4> 
+                 
+                <h2 style = "text-align: center;color: darkblue">_______________________________________________________________________________</h2>
+
+                <div id="ajustarImagem">
+
+                    <img id="lagoaAzul" class="banner" src="imagens/lagoa_azul.PNG" alt="">
+                    <p class="classe_do_paragrafo"><font font size="3"><strong>Filme: A Lagoa Azul</strong></font>
+                        <br><font font size="2"><strong>Característica: </strong>Romance/Drama (1h 45m)</font>
+                        <br><font font size="2"><strong>Sinopse: </strong> Após um naufrágio, duas crianças e o velho cozinheiro de um navio vão parar em uma ilha deserta no Oceano Pacífico. Pouco tempo depois, o cozinheiro morre, deixando o menino Richard e a menina Emmeline entregues à própria sorte.</font>
+                        <br><font font size="2"><strong>Observação: Filme para maiores de 18 anos com apresentação de documento.</strong></font>
+                    </p>
+                    <br>
+
+                    <img id="velozesEFuriosos" class="banner"  src="imagens/velozes_furiosos.PNG" alt="">
+                    <p class="classe_do_paragrafo"><font font size="3"><strong>Filme: Velozes e Furiosos 5: Operação Rio</strong></font>
+                        <br><font font size="2"><strong>Característica: </strong>Ação / Assalto (2h 12 min)</font>
+                        <br><font font size="2"><strong>Sinopse: </strong> Desde que o ex-policial Brian O'Conner e Mia Toretto libertaram Dom da prisão, eles viajam pelo mundo para fugir das autoridades. No Rio de Janeiro, eles são obrigados a fazer um último trabalho antes de ganhar sua liberdade definitiva. Brian e Dom montam uma equipe de elite de pilotos de carro para executar a tarefa, mas precisam enfrentar um empresário corrupto e também um obstinado agente federal norte-americano.</font>
+                    </p>
+                    <br>
+
+                    
+                    <img id="senna" class="banner"  src="imagens/senna.PNG" alt="">
+                    <p class="classe_do_paragrafo";align="right"><font font size="3"><strong>Filme: Senna: O Brasileiro, O Herói, O Campeão </strong></font>
+                        <br><font font size="2"><strong>Característica: </strong>Documentário/Esporte  (2h 42m)</font>
+                        <br><font font size="2"><strong>Sinopse: </strong>Para os apaixonados por Fórmula 1, para quem não teve a oportunidade de ver Ayrton Senna num circuito ou para aqueles que querem matar a saudade desse grande ídolo nacional, chega ao Cinecec o documentário Senna. O primeiro documentário sobre o piloto brasileiro, que ganhou o campeonato mundial três vezes antes de morrer tragicamente aos 34 anos de idade.</font>
+                    
+                </div>
+
+                    <h2 style = "text-align: center;color: darkblue">_______________________________________________________________________________</h2>
+                    
+                    
+                        <h4 style = "text-align: center;color: darkblue">GOSTOU DE NOSSAS OPÇÕES? GARANTA JÁ SEU INGRESSO!</h4>
+
+                        <font class="nome_ajustar_filme">
+                        
+                            <Select id="lista_filme">
+                                <option value="--- Escolha o filme ---">--- Escolha o filme ---</option>
+                                <option value="A Lagoa Azul">A Lagoa Azul</option>
+                                <option value="Velozes e Furiosos 5">Velozes e Furiosos 5</option>
+                                <option value="Senna">Senna</option>
+                            </Select>
+                        </font>
+
+                        <font class="nome_ajustar_horario">
+
+                            <Select id="lista_horario">
+                                <option value="--- Horário Filme ---">--- Horário Filme ---</option>
+                                <option value="17:00 h">17:00 h</option>
+                                <option value="19:00 h">19:00 h</option>
+                                <option value="21:00 h">21:00 h</option>
+                            </Select>
+
+                        </font>
+
+
+                        <font class="nome_ajustar_ingresso">
+
+                            <Select id="lista_ingresso">
+                                <option value="--- Tipo de Ingresso ---">--- Tipo de Ingresso ---</option>
+                                <option value="Inteira - R$ 40,00">Inteira - R$ 40,00</option>
+                                <option value="Meia - R$ 20,00">Meia - R$ 20,00</option>
+                            </Select>
+
+                        </font>
+
+                        <font class="nome_ajustar_ingresso">
+
+                            <input type="text" name = "fileira_polt" id = "fil_polt">
+
+                        </font>
+                        
+                        <br><br>
+
+                        <font font size="3";color:darkblue;strong>Defina na sequencial as opções para escolha do filme e por último, informe sua poltrona através da fileira seguido do número, exemplo: C8.</font>
+                        <br><br>
+                        
+                        <input type = "button" id = "botao" value = "Comprar Ingresso" onclick = "comprar_ingresso()">
+                        <br><br><br>
+                    
+
+            <div id="retangulo">        
+                <font  font size="3"; style="color: darkblue"><strong>
+                <div id = "div_msg"></div>
+                </strong>
+                </font>
+
+            </div>
+
+        </section>
+
+        <br><br>
+        <footer>&copy; Capacitação T.I</footer>
+
+        <script src='script_cinema.js'></script>
+
+    </body>
+</html>
